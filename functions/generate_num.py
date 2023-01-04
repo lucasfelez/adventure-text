@@ -4,14 +4,14 @@ import time
 
 
 def generate(how_many):
-  estimated_time = round(0.02555 * how_many,2)
+  estimated_time = round(0.0255665555 * how_many,2)
   
   nums = []
   print("the estimared time is: " + str(estimated_time) + "seconds")
-  time.sleep(3)
+  
   start_time = time.time()
   for i in range(how_many):
-    nums.append(random.randint(0,how_many*50))
+    nums.append(random.randint(0,how_many*5))
     print("left to generate is:",how_many-len(nums))
     time.sleep(0.02555)
     
